@@ -10,9 +10,9 @@ final class NamedaysTests: XCTestCase {
         XCTAssertEqual(NamedaysSweden2001().names[1][2], ["Disa", "Hjördis"])
     }
     func testSweden2001_December23() throws {
-        XCTAssertEqual(NamedaysSweden2001().getNames(month: 12, day: 23), ["Adam"])
+        XCTAssertEqual(NamedaysSweden2001().getNamesForDate(month: 12, day: 23), ["Adam"])
     }
     func testSweden2001_December24() throws {
-        XCTAssertEqual(NamedaysSweden2001().getNames(month: 12, day: 24), ["Eva"])
+        XCTAssertEqual(NamedaysSweden2001().getNamesForDate(month: 12, day: 24), ["Eva"])
     }
 }
